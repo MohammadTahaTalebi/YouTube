@@ -1,0 +1,87 @@
+#dm{
+    position: fixed;
+    top: 200px;
+    width: 50px;
+    display: none;
+}
+label{
+    font-size: 13px;
+    font-weight: 700;
+    position: fixed;
+    top: 200px;
+    left: -110px;
+    z-index: 9999999;
+    width: 140px;
+    height: 30px;
+    border-radius:0px 50px 50px 0px ;
+    background: rgb(0, 0, 0);
+    color: #fff;
+    text-align: center;
+    transition: .5s;
+    border: 3px dashed #fff;
+    cursor: pointer;
+}
+label:hover{
+    left: -7px;
+    transition: .5s;
+}
+input:checked + label{
+    background: rgb(255, 255, 255);
+    color: #000000;
+    border: 3px dashed #000000;
+}
+input:checked ~ #header{
+    background-color: rgb(226, 226, 226);
+    border-bottom: 2px solid black;
+    border-top: 0 none;
+    color: rgb(40, 40, 40);
+}
+input:checked ~ #header > .search{
+    background-color: #4e4e4e;
+}
+input:checked ~ #header > .search > input{
+    background-color: #4e4e4e;
+    color: #fff;
+}
+input:checked ~ #content > .miniSlider > .gal > .items{
+    background-color: rgb(197, 197, 197);
+    transition: 0s;
+}
+input:checked ~ #content{
+    background-color: rgb(226, 226, 226);
+    color: rgb(40, 40, 40);
+    transition: 0s;
+}
+input:checked ~ #content > .title{
+    color: rgb(40, 40, 40);
+}
+input:checked ~ #content > .detailtv{
+    background-color: rgb(165, 165, 165);
+}
+
+input:checked ~ #content > .offer > #matn > .p1,input:checked ~ #content > .detailtv > .matn2 > .p1,#content > .kidsfilimo > .matn3 > .p1{
+    color: #252525;
+}
+input:checked ~ #content > .offer > #matn > .p2,input:checked ~ #content > .detailtv > .matn2 > .p2{
+    color: #2d2d2d;
+}
+input:checked ~ #content > .offer > #matn > .p3,input:checked ~ #content > .detailtv > .matn2 > .p3{
+    color: #323232;
+}
+input:checked ~ #content > .offer > #matn > .p4,input:checked ~ #content > .detailtv > .matn2 > .p4{
+    color: #464646;
+}
+input:checked ~ #content > .kidsfilimo > .matn3 > .p5{
+    color: #2f2f2f;
+}
+input:checked ~ #content > .comments > .comment > .p6{
+    color: #2f2f2f;
+}
+input:checked ~ #content > .comments > .comment > .p7{
+    color: #474747;
+}
+input:checked ~ #content > .miniSlider > .gal > .items > h2{
+    color: #383838;
+}
+
+
